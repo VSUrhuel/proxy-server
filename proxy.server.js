@@ -13,7 +13,6 @@ app.use(cors({ origin: FRONTEND_ORIGIN }));
 
 // Proxy all requests to the target API
 app.use("/", proxy(API_SERVICE_URL));
-g;
 
 app.listen(PORT, () => {
   console.log(`🚀 Proxy server is running on http://localhost:${PORT}`);
